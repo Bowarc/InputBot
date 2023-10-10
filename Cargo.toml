@@ -16,6 +16,7 @@ edition = "2021"
 strum = { version = "0.25.0", features = ["derive"] }
 strum_macros = "0.25.2"
 once_cell = "1.18.0"
+serde = { version = "1.0.188", features = ["derive"] }
 
 [target.'cfg(windows)'.dependencies]
 windows = { version = "0.51.1", features = [

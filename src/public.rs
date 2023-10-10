@@ -9,7 +9,9 @@ pub enum BlockInput {
     DontBlock,
 }
 
-#[derive(Debug, Eq, PartialEq, Hash, Copy, Clone, EnumIter)]
+#[derive(
+    Debug, Eq, PartialEq, Hash, Copy, Clone, EnumIter, serde::Deserialize, serde::Serialize,
+)]
 pub enum KeybdKey {
     BackspaceKey,
     TabKey,
@@ -137,7 +139,9 @@ pub enum KeybdKey {
     OtherKey(u64),
 }
 
-#[derive(Debug, Eq, PartialEq, Hash, Copy, Clone, EnumIter)]
+#[derive(
+    Debug, Eq, PartialEq, Hash, Copy, Clone, EnumIter, serde::Deserialize, serde::Serialize,
+)]
 pub enum MouseButton {
     LeftButton,
     MiddleButton,
